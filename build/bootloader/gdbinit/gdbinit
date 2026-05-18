@@ -1,0 +1,2 @@
+source D:/esp32Project/10_spilcd_LVGL/build/bootloader/gdbinit/symbols
+source D:/esp32Project/10_spilcd_LVGL/build/bootloader/gdbinit/connect

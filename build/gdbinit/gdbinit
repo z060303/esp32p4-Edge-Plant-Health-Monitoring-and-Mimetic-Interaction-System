@@ -1,0 +1,2 @@
+source D:/esp32Project/10_spilcd_LVGL/build/gdbinit/symbols
+source D:/esp32Project/10_spilcd_LVGL/build/gdbinit/connect
