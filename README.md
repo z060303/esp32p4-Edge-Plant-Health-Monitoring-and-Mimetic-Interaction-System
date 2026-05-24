@@ -61,8 +61,6 @@ Plaintext
 🚀 功能特性
 高精度传感器采集: 结合 ESP-IDF v5 驱动，加入曲线拟合校准（Curve Fitting Calibration），实现极高精度的电压到湿度百分比转换。
 
-丝滑的 UI 体验: 使用 esp_lcd 框架对接 LVGL V8，开启 MALLOC_CAP_DMA 内存分配，突破 SPI 屏幕刷新瓶颈。
-
 高内聚低耦合: 采用合理的 CMakeLists.txt 组件化设计，驱动层 (BSP) 与应用层 (APP) 严格分离。
 
 多任务并发: 引入 FreeRTOS，解决慢速 I2C 阻塞导致的屏幕掉帧问题，实现采集与显示完美并行。
