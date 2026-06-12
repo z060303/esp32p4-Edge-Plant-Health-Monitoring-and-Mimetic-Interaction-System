@@ -1,0 +1,58 @@
+# ESP-IDF build outputs
+build/
+build_ascii/
+**/build/
+**/build_ascii/
+**/managed_components/
+**/dependencies.lock
+sdkconfig.old
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Training and generated data
+runs/
+data/
+dataset/
+dataset_plant_status/
+dataset_scope/
+models/**/train.cache
+models/**/val.cache
+models/*
+!models/yolo_plant_status/
+!models/yolo_plant_status/**
+models/yolo_plant_status_dataset/
+models/yolo_plant_status/**/*.jpg
+models/yolo_plant_status/**/*.png
+models/yolo_plant_status/**/events.out.tfevents*
+
+# Evidence binaries are local backup artifacts.
+docs/evidence/**/*.bin
+docs/evidence/**/*.elf
+docs/evidence/firmware/
+
+# Large downloaded/reference bundles
+references/
+vendor_docs/
+external_peripheral_project/
+camera_csi_probe/
+vendor_docs/
+external_peripheral_project/**/build/
+external_peripheral_project/**/managed_components/
+
+# Binary model weights are tracked deliberately only when needed.
+# Keep new heavy exports out until they are documented.
+*.onnx
+*.tflite
+*.espdl
+*.engine
+
+# Local/editor files
+.vscode/
+.idea/
+*.log
+*.tmp
