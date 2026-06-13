@@ -24,6 +24,10 @@
 #include "sdkconfig.h"
 
 static const char *TAG = "lcd";
+static bool frame_drawing = false;
+static uint16_t *frame_buffer = NULL;
+static void lcd_fill_frame_buffer(uint16_t *buffer, uint16_t color);
+static void lcd_wait_refresh_done(void);
 
 
 DRAM_ATTR void *lcd_buffer[2];              /* 指向屏幕双缓存 */
@@ -48,6 +52,23 @@ uint32_t g_back_color  = 0xFFFF;            /* 背景色 */
  * @retval      0, 非法; 
  *              其他, LCD ID
  */
+static void lcd_fill_frame_buffer(uint16_t *buffer, uint16_t color)
+{
+    for (uint32_t i = 0; i < lcddev.width * lcddev.height; i++)
+    {
+        buffer[i] = color;
+    }
+}
+
+static void lcd_wait_refresh_done(void)
+{
+    do
+    {
+        vTaskDelay(1);
+    }
+    while (refresh_done_flag != 1);
+}
+
 uint16_t lcd_panelid_read(void)
 {
     uint8_t idx = 0;
@@ -189,21 +210,11 @@ IRAM_ATTR void lcd_clear(uint16_t color)
     uint16_t *buffer = (uint16_t *)lcd_buffer[buffer_sw];  /* 将 void* 转换为 uint16_t* */
 
     /* 制定缓存区填充颜色值 */
-    for (uint32_t i = 0; i < lcddev.width * lcddev.height; i++)
-    {
-        buffer[i] = color;
-    }
+    lcd_fill_frame_buffer(buffer, color);
 
-    esp_lcd_panel_draw_bitmap(lcddev.lcd_panel_handle, 0, 0, lcddev.width, lcddev.height, buffer);
-    /* 清除缓存标志 */
     refresh_done_flag = 0;
-
-    do
-    {
-        /* 等待内部缓存刷新完成 */
-        vTaskDelay(1);
-    }
-    while (refresh_done_flag != 1);
+    esp_lcd_panel_draw_bitmap(lcddev.lcd_panel_handle, 0, 0, lcddev.width, lcddev.height, buffer);
+    lcd_wait_refresh_done();
     /* 使用异或操作在 0 和 1 之间切换，目的是为了切换另一个缓冲区 */
     buffer_sw ^= 1;
 }
@@ -214,8 +225,41 @@ IRAM_ATTR void lcd_clear(uint16_t color)
  * @param       color :颜色值
  * @retval      无
  */
+void lcd_frame_begin(uint16_t color)
+{
+    frame_buffer = (uint16_t *)lcd_buffer[buffer_sw];
+    lcd_fill_frame_buffer(frame_buffer, color);
+    g_back_color = color;
+    frame_drawing = true;
+}
+
+void lcd_frame_end(void)
+{
+    if (!frame_drawing || frame_buffer == NULL)
+    {
+        return;
+    }
+
+    refresh_done_flag = 0;
+    esp_lcd_panel_draw_bitmap(lcddev.lcd_panel_handle, 0, 0, lcddev.width, lcddev.height, frame_buffer);
+    lcd_wait_refresh_done();
+
+    frame_drawing = false;
+    frame_buffer = NULL;
+    buffer_sw ^= 1;
+}
+
 void lcd_draw_point(uint16_t x, uint16_t y, uint16_t color)
 {
+    if (frame_drawing)
+    {
+        if (x < lcddev.width && y < lcddev.height)
+        {
+            frame_buffer[(uint32_t)y * lcddev.width + x] = color;
+        }
+        return;
+    }
+
     esp_lcd_panel_draw_bitmap(lcddev.lcd_panel_handle, x, y, x + 1, y + 1, (uint16_t *)&color);
 }
 
@@ -241,6 +285,19 @@ void lcd_fill(uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, uint16_t color
     /* 计算填充区域的宽度 */
     uint16_t width = ex - sx;
     uint16_t height = ey - sy;
+
+    if (frame_drawing)
+    {
+        for (uint16_t y = 0; y < height; y++)
+        {
+            uint16_t *row = frame_buffer + ((uint32_t)(sy + y) * lcddev.width) + sx;
+            for (uint16_t x = 0; x < width; x++)
+            {
+                row[x] = color;
+            }
+        }
+        return;
+    }
 
     /* 分配内存 */
     uint16_t *buffer = heap_caps_malloc(width * sizeof(uint16_t), MALLOC_CAP_INTERNAL);
@@ -287,6 +344,19 @@ void lcd_color_fill(uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, uint16_t
     uint16_t width = ex - sx + 1;
     uint16_t height = ey - sy + 1;
     uint32_t buf_index = 0;
+
+    if (frame_drawing)
+    {
+        for (uint16_t y_index = 0; y_index < height; y_index++)
+        {
+            uint16_t *row = frame_buffer + ((uint32_t)(sy + y_index) * lcddev.width) + sx;
+            for (uint16_t x_index = 0; x_index < width ; x_index++)
+            {
+                row[x_index] = color[buf_index++];
+            }
+        }
+        return;
+    }
 
     uint16_t *buffer = heap_caps_malloc(width * sizeof(uint16_t), MALLOC_CAP_INTERNAL);
 
@@ -392,6 +462,16 @@ void lcd_draw_hline(uint16_t x, uint16_t y, uint16_t len, uint16_t color)
 
     uint16_t ex = fmin(lcddev.width - 1, x + len - 1);
     uint16_t ey = y;
+
+    if (frame_drawing)
+    {
+        uint16_t *row = frame_buffer + ((uint32_t)y * lcddev.width) + x;
+        for (uint32_t i = 0; i <= ex - x; i++)
+        {
+            row[i] = color;
+        }
+        return;
+    }
 
     /* 填充颜色区域 */
     uint32_t width = ex - x + 1;

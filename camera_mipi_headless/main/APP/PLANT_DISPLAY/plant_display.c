@@ -13,7 +13,6 @@
 #include "plant_zh_font.h"
 
 extern void *lcd_buffer[2];
-extern uint32_t g_back_color;
 
 #define RGB565(r, g, b) (uint16_t)((((r) & 0xF8) << 8) | (((g) & 0xFC) << 3) | ((b) >> 3))
 
@@ -650,9 +649,7 @@ void plant_display_show_status_full(const char *status,
     ui_format_sensor(hum_text, sizeof(hum_text), air_humidity, "%", 0, "--");
     ui_format_sensor(light_text, sizeof(light_text), light, " 勒克斯", 0, "--");
 
-    g_back_color = bg;
-    lcd_clear(bg);
-    ui_fill(0, 0, 800, 480, bg);
+    lcd_frame_begin(bg);
 
     ui_draw_header(touched);
     ui_draw_plant(28, 82, status, touched, accent);
@@ -663,6 +660,8 @@ void plant_display_show_status_full(const char *status,
     ui_draw_metric(222, 408, "温度", temp_text, temperature > -40.0f ? (int)((temperature + 5.0f) * 2.0f) : 0, UI_CORAL);
     ui_draw_metric(416, 408, "湿度", hum_text, air_humidity >= 0.0f ? (int)air_humidity : 0, UI_BLUE);
     ui_draw_metric(610, 408, "光照", light_text, light >= 0.0f ? (int)(light / 15.0f) : 0, UI_YELLOW);
+
+    lcd_frame_end();
 
     ESP_LOGI(TAG,
              "UI status=%s mood=%s advice=%s touch=%d layout=plant_monitor",
