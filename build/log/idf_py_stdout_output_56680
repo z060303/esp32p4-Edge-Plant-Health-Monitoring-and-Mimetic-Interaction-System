@@ -1,0 +1,18 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ZHENG\Desktop\vscodeproject\plant_detect\esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01\camera_mipi_headless\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5280 bytes. 0xd80 bytes (14%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/touch_sensor.c.obj
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable 28_mipicamera.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/28_mipicamera.bin
+[10/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ZHENG\Desktop\vscodeproject\plant_detect\esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01\camera_mipi_headless\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/partition_table/partition-table.bin C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/28_mipicamera.bin"
+28_mipicamera.bin binary size 0x7d000 bytes. Smallest app partition is 0x1f0000 bytes. 0x173000 bytes (75%) free.

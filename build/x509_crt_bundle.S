@@ -1,4 +1,4 @@
-/* * Data converted from D:/esp32Project/10_spilcd_LVGL/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

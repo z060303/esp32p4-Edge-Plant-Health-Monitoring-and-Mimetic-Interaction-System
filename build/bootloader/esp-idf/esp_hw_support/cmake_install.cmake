@@ -32,18 +32,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/esp32Project/10_spilcd_LVGL/build/bootloader/esp-idf/esp_hw_support/port/esp32p4/cmake_install.cmake")
+  include("C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/esp_hw_support/port/esp32p4/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/esp32Project/10_spilcd_LVGL/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 

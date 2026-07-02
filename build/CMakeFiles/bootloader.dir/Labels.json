@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/CMakeFiles/bootloader"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/CMakeFiles/bootloader.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/esp32Project/10_spilcd_LVGL/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

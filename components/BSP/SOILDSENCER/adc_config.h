@@ -3,11 +3,12 @@
 
 #include <stdint.h>
 #include "esp_err.h"
+#include "esp_adc/adc_oneshot.h"
 #include "driver/gpio.h"
 
 // 宏定义：使用的 ADC 单元和通道
-#define EXAMPLE_ADC_UNIT        ADC_UNIT_1
-#define EXAMPLE_ADC_CHANNEL     ADC_CHANNEL_0   // ESP32-P4 对应的 GPIO16
+#define EXAMPLE_ADC_UNIT        ADC_UNIT_2
+#define EXAMPLE_ADC_CHANNEL     ADC_CHANNEL_0   // ESP32-P4 GPIO49
 #define EXAMPLE_ADC_ATTEN       ADC_ATTEN_DB_12 // 12dB 衰减，量程更宽 (约 0 ~ 3.3V)
 
 /**

@@ -1,0 +1,304 @@
+[1/117] Generating project_elf_src_esp32p4.c
+[2/117] Generating C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/esp-idf/esp_system/ld/memory.ld linker script...
+[3/117] Generating C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/esp-idf/esp_system/ld/sections.ld.in linker script...
+[4/117] Linking C static library esp-idf\esp_https_ota\libesp_https_ota.a
+[5/117] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1984K,
+vfs,data,fat,0x200000,10M,
+storage,data,spiffs,0xc00000,4M,
+*******************************************************************************
+[6/117] Linking C static library esp-idf\esp_http_server\libesp_http_server.a
+[7/117] Creating directories for 'bootloader'
+[8/117] No download step for 'bootloader'
+[9/117] Linking C static library esp-idf\esp_http_client\libesp_http_client.a
+[10/117] No update step for 'bootloader'
+[11/117] Linking C static library esp-idf\tcp_transport\libtcp_transport.a
+[12/117] No patch step for 'bootloader'
+[13/117] Linking C static library esp-idf\esp_psram\libesp_psram.a
+[14/117] Linking C static library esp-idf\esp_adc\libesp_adc.a
+[15/117] Linking C static library esp-idf\esp-tls\libesp-tls.a
+[16/117] Linking C static library esp-idf\http_parser\libhttp_parser.a
+[17/117] Linking C static library esp-idf\esp_gdbstub\libesp_gdbstub.a
+[18/117] Linking C static library esp-idf\esp_wifi\libesp_wifi.a
+[19/117] Linking C static library esp-idf\nvs_flash\libnvs_flash.a
+[20/117] Linking C static library esp-idf\driver\libdriver.a
+[21/117] Linking C static library esp-idf\esp_driver_parlio\libesp_driver_parlio.a
+[22/117] Linking C static library esp-idf\esp_driver_ledc\libesp_driver_ledc.a
+[23/117] Linking C static library esp-idf\esp_driver_i2c\libesp_driver_i2c.a
+[24/117] Linking C static library esp-idf\esp_driver_sdm\libesp_driver_sdm.a
+[25/117] Linking C static library esp-idf\esp_driver_tsens\libesp_driver_tsens.a
+[26/117] Linking C static library esp-idf\esp_driver_rmt\libesp_driver_rmt.a
+[27/117] Linking C static library esp-idf\esp_driver_sdspi\libesp_driver_sdspi.a
+[28/117] Linking C static library esp-idf\esp_driver_sdmmc\libesp_driver_sdmmc.a
+[29/117] Linking C static library esp-idf\sdmmc\libsdmmc.a
+[30/117] Linking C static library esp-idf\esp_driver_i2s\libesp_driver_i2s.a
+[31/117] Linking C static library esp-idf\esp_driver_ana_cmpr\libesp_driver_ana_cmpr.a
+[32/117] Linking C static library esp-idf\esp_driver_mcpwm\libesp_driver_mcpwm.a
+[33/117] Linking C static library esp-idf\esp_driver_spi\libesp_driver_spi.a
+[34/117] Linking C static library esp-idf\esp_driver_pcnt\libesp_driver_pcnt.a
+[35/117] Linking C static library esp-idf\esp_netif\libesp_netif.a
+[36/117] Linking C static library esp-idf\lwip\liblwip.a
+[37/117] Linking C static library esp-idf\vfs\libvfs.a
+[38/117] Linking C static library esp-idf\esp_vfs_console\libesp_vfs_console.a
+[39/117] Linking C static library esp-idf\esp_driver_usb_serial_jtag\libesp_driver_usb_serial_jtag.a
+[40/117] Linking C static library esp-idf\esp_event\libesp_event.a
+[41/117] Linking C static library esp-idf\esp_driver_uart\libesp_driver_uart.a
+[42/117] Linking C static library esp-idf\esp_ringbuf\libesp_ringbuf.a
+[43/117] Linking C static library esp-idf\esp_driver_gptimer\libesp_driver_gptimer.a
+[44/117] Linking C static library esp-idf\esp_timer\libesp_timer.a
+[45/117] Linking C static library esp-idf\cxx\libcxx.a
+[46/117] Linking C static library esp-idf\pthread\libpthread.a
+[47/117] Linking C static library esp-idf\newlib\libnewlib.a
+[48/117] Linking C static library esp-idf\freertos\libfreertos.a
+[49/117] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[50/117] Linking C static library esp-idf\esp_security\libesp_security.a
+[51/117] Linking C static library esp-idf\soc\libsoc.a
+[52/117] Linking C static library esp-idf\heap\libheap.a
+[53/117] Linking C static library esp-idf\log\liblog.a
+[54/117] Linking C static library esp-idf\hal\libhal.a
+[55/117] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[56/117] Linking C static library esp-idf\esp_common\libesp_common.a
+[57/117] Linking C static library esp-idf\esp_system\libesp_system.a
+[58/117] Linking C static library esp-idf\spi_flash\libspi_flash.a
+[59/117] Linking C static library esp-idf\esp_mm\libesp_mm.a
+[60/117] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[61/117] Linking C static library esp-idf\efuse\libefuse.a
+[62/117] Linking C static library esp-idf\esp_partition\libesp_partition.a
+[63/117] Linking C static library esp-idf\app_update\libapp_update.a
+[64/117] Linking C static library esp-idf\esp_bootloader_format\libesp_bootloader_format.a
+[65/117] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[66/117] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedtls.a
+[67/117] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedx509.a
+[68/117] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedcrypto.a
+[69/117] Linking CXX static library esp-idf\mbedtls\mbedtls\3rdparty\p256-m\libp256m.a
+[70/117] Linking CXX static library esp-idf\mbedtls\mbedtls\3rdparty\everest\libeverest.a
+[71/117] Generating ../../x509_crt_bundle.S
+[72/117] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[73/117] Linking C static library esp-idf\mbedtls\libmbedtls.a
+[74/117] Linking C static library esp-idf\esp_pm\libesp_pm.a
+[75/117] Linking C static library esp-idf\esp_driver_gpio\libesp_driver_gpio.a
+[76/117] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/touch_sensor.c.obj
+[77/117] Linking C static library esp-idf\riscv\libriscv.a
+[78/117] Linking C static library esp-idf\app_trace\libapp_trace.a
+[79/117] Linking C static library esp-idf\unity\libunity.a
+[80/117] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[81/117] Linking C static library esp-idf\esp_https_server\libesp_https_server.a
+[82/117] Linking C static library esp-idf\esp_driver_jpeg\libesp_driver_jpeg.a
+[83/117] Linking C static library esp-idf\esp_driver_isp\libesp_driver_isp.a
+[84/117] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[85/117] Linking C static library esp-idf\console\libconsole.a
+[86/117] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[87/117] Linking C static library esp-idf\esp_driver_touch_sens\libesp_driver_touch_sens.a
+[88/117] Linking C static library esp-idf\esp_driver_ppa\libesp_driver_ppa.a
+[89/117] Linking C static library esp-idf\mqtt\libmqtt.a
+[90/117] Linking C static library esp-idf\json\libjson.a
+[91/117] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[92/117] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[93/117] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[94/117] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[95/117] Linking C static library esp-idf\rt\librt.a
+[96/117] Linking C static library esp-idf\cmock\libcmock.a
+[97/117] Linking C static library esp-idf\spiffs\libspiffs.a
+[98/117] Linking C static library esp-idf\espressif__esp_sccb_intf\libespressif__esp_sccb_intf.a
+[99/117] Linking C static library esp-idf\usb\libusb.a
+[100/117] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[101/117] Linking C static library esp-idf\fatfs\libfatfs.a
+[102/117] Linking C static library esp-idf\protocomm\libprotocomm.a
+[103/117] Linking C static library esp-idf\espressif__esp_h264\libespressif__esp_h264.a
+[104/117] Linking C static library esp-idf\BSP\libBSP.a
+[105/117] Linking C static library esp-idf\espressif__esp_cam_sensor\libespressif__esp_cam_sensor.a
+[106/117] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[107/117] Linking C static library esp-idf\espressif__esp_video\libespressif__esp_video.a
+[108/117] Linking C static library esp-idf\main\libmain.a
+[109/117] Performing configure step for 'bootloader'
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+CMake Warning in C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ysenes/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ysenes/CMakeFiles/cmTC_f5eb9.dir/./
+
+  has 238 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCCompilerABI.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning in C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xxy4w1/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xxy4w1/CMakeFiles/cmTC_df686.dir/./
+
+  has 238 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCXXCompilerABI.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32p4
+-- Project sdkconfig file C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/sdkconfig
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/riscv/ld/rom.api.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.wdt.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.systimer.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader/subproject/main/ld/esp32p4/bootloader.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader/subproject/main/ld/esp32p4/bootloader.rom.ld
+Traceback (most recent call last):
+  File "D:\Espressif\frameworks\esp-idf-v5.4.4\components\esp_rom\gen_gdbinit.py", line 72, in <module>
+    gdbinit_lines = generate_gdbinit_rom_add_symbols(target)
+  File "D:\Espressif\frameworks\esp-idf-v5.4.4\components\esp_rom\gen_gdbinit.py", line 32, in generate_gdbinit_rom_add_symbols
+    raise EnvironmentError(
+        'ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.')
+OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.
+CMake Warning at D:/Espressif/frameworks/esp-idf-v5.4.4/tools/cmake/gdbinit.cmake:52 (message):
+  Error while generating esp_rom gdbinit
+Call Stack (most recent call first):
+  D:/Espressif/frameworks/esp-idf-v5.4.4/tools/cmake/project.cmake:356 (__generate_gdbinit)
+  D:/Espressif/frameworks/esp-idf-v5.4.4/tools/cmake/project.cmake:941 (__project_info)
+  CMakeLists.txt:67 (project)
+
+
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table riscv soc spi_flash
+-- Component paths: D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader_support D:/Espressif/frameworks/esp-idf-v5.4.4/components/efuse D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_app_format D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_bootloader_format D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_common D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_hw_support D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_security D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system D:/Espressif/frameworks/esp-idf-v5.4.4/components/esptool_py D:/Espressif/frameworks/esp-idf-v5.4.4/components/freertos D:/Espressif/frameworks/esp-idf-v5.4.4/components/hal D:/Espressif/frameworks/esp-idf-v5.4.4/components/log D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader/subproject/main D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader/subproject/components/micro-ecc D:/Espressif/frameworks/esp-idf-v5.4.4/components/newlib D:/Espressif/frameworks/esp-idf-v5.4.4/components/partition_table D:/Espressif/frameworks/esp-idf-v5.4.4/components/riscv D:/Espressif/frameworks/esp-idf-v5.4.4/components/soc D:/Espressif/frameworks/esp-idf-v5.4.4/components/spi_flash
+-- Configuring done (17.4s)
+CMake Warning in D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_bootloader_format/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/./
+
+  has 243 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    esp_bootloader_desc.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in D:/Espressif/frameworks/esp-idf-v5.4.4/components/bootloader_support/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/./
+
+  has 237 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    src/bootloader_panic.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in D:/Espressif/frameworks/esp-idf-v5.4.4/components/efuse/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/./
+
+  has 211 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    1abec6c965ee36358969cf4eaf4865b4/esp_efuse_api_key.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_hw_support/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/./
+
+  has 229 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    port/esp32p4/esp_cpu_intr.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in D:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_rom/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/./
+
+  has 215 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    patches/esp_rom_regi2c_esp32p4.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader
+[110/117] Performing build step for 'bootloader'
+[1/18] Generating project_elf_src_esp32p4.c
+[2/18] Linking C static library esp-idf\log\liblog.a
+[3/18] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32p4.c.obj
+[4/18] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[5/18] Linking C static library esp-idf\esp_common\libesp_common.a
+[6/18] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[7/18] Linking C static library esp-idf\esp_system\libesp_system.a
+[8/18] Linking C static library esp-idf\efuse\libefuse.a
+[9/18] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[10/18] Linking C static library esp-idf\esp_bootloader_format\libesp_bootloader_format.a
+[11/18] Linking C static library esp-idf\spi_flash\libspi_flash.a
+[12/18] Linking C static library esp-idf\hal\libhal.a
+[13/18] Linking C static library esp-idf\micro-ecc\libmicro-ecc.a
+[14/18] Linking C static library esp-idf\soc\libsoc.a
+[15/18] Linking C static library esp-idf\main\libmain.a
+[16/18] Linking C executable bootloader.elf
+[17/18] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32p4 image...
+Merged 2 ELF sections
+Successfully created esp32p4 image.
+Generated C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/bootloader.bin
+[18/18] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ZHENG\Desktop\vscodeproject\plant_detect\esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01\camera_mipi_headless\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5280 bytes. 0xd80 bytes (14%) free.
+[111/117] No install step for 'bootloader'
+[112/117] Completed 'bootloader'
+[113/117] Generating ld/sections.ld
+[114/117] Building C object CMakeFiles/28_mipicamera.elf.dir/project_elf_src_esp32p4.c.obj
+[115/117] Linking CXX executable 28_mipicamera.elf
+[116/117] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/28_mipicamera.bin
+[117/117] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ZHENG\Desktop\vscodeproject\plant_detect\esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01\camera_mipi_headless\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/partition_table/partition-table.bin C:/Users/ZHENG/Desktop/vscodeproject/plant_detect/esp32p4-Edge-Plant-Health-Monitoring-and-Mimetic-Interaction-System-plant_ai_01/camera_mipi_headless/build/28_mipicamera.bin"
+28_mipicamera.bin binary size 0x7ce80 bytes. Smallest app partition is 0x1f0000 bytes. 0x173180 bytes (75%) free.

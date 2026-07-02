@@ -1,6 +1,8 @@
 #ifndef __BH1750_H
 #define __BH1750_H
 
+#include <stdint.h>
+
 #include "esp_err.h"
 
 #ifdef __cplusplus

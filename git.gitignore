@@ -1,0 +1,30 @@
+# Build
+build/
+build_codex/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Binary
+*.bin
+*.elf
+*.map
+
+# Ninja
+.ninja_*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+
+# Temporary
+*.tmp
+
+# Python
+__pycache__/
+
+# macOS
+.DS_Store

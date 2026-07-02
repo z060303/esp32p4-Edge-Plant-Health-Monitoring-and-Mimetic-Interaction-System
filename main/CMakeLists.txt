@@ -1,6 +1,16 @@
-idf_component_register(SRC_DIRS "." 
-                                "APP/FreeRTOS" 
-                                "APP/LVGL" 
-                       INCLUDE_DIRS "." 
-                                    "APP/FreeRTOS" 
-                                    "APP/LVGL")
+idf_component_register(
+                        SRC_DIRS 
+                            "."
+                            "APP/MIPI_CAM" 
+                            "APP/PLANT_DISPLAY"
+                            "APP/PLANT_ENGINE"
+                            "APP/PLANT_SENSOR"
+                            "APP/PLANT_TOUCH"
+                        INCLUDE_DIRS 
+                            "."
+                            "APP/MIPI_CAM" 
+                            "APP/PLANT_DISPLAY"
+                            "APP/PLANT_ENGINE"
+                            "APP/PLANT_SENSOR"
+                            "APP/PLANT_TOUCH"
+                        )

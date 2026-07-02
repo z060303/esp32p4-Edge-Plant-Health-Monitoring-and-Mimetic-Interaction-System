@@ -1,12 +1,14 @@
 #ifndef __SOFT_I2C_H__
 #define __SOFT_I2C_H__
 
+#include <stdint.h>
+
 #include "driver/gpio.h"
 #include "esp_rom_sys.h"
 
 // 引脚定义
-#define SOFT_I2C_SCL_PIN    GPIO_NUM_10
-#define SOFT_I2C_SDA_PIN    GPIO_NUM_9
+#define SOFT_I2C_SCL_PIN    GPIO_NUM_30
+#define SOFT_I2C_SDA_PIN    GPIO_NUM_29
 
 // 延时控制：约 10us 对应 100KHz (由于逻辑损耗，实际频率会稍低)
 #define I2C_DELAY_US()      esp_rom_delay_us(5)

@@ -1,8 +1,0 @@
-esptool.py v4.11.0
-Serial port COM17
-
-A fatal error occurred: Could not open COM17, the port is busy or doesn't exist.
-(could not open port 'COM17': FileNotFoundError(2, 'ϵͳҲָļ', None, 2))
-
-Hint: Check if the port is correct and ESP connected
-
